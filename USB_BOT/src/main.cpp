@@ -1,4 +1,13 @@
 #include <Arduino.h>
+#include "place.h"
+#include "defs.h"
+#include "common.h"
+
+#ifndef MyTeleBot
+  #include "myTeleBot.h"
+ #endif
+
+
 
 void setup() {
   // put your setup code here, to run once:/
