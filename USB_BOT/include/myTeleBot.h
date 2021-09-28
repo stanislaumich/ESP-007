@@ -3,7 +3,7 @@
 #include "common.h"
 #include "defs.h"
 #include "myTime.h"
-//#include "myDisplay.h"
+#include "myDisplay.h"
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
