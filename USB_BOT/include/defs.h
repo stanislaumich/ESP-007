@@ -14,9 +14,9 @@
  #endif
  //#define myName "USBBOT"
 
- String myID="947749033";
- String myName="USBBOT";
- String myToken="947749033:AAF00_fgJ0JTYF2XsZE_0zbz-8aZwtdHb-M";
+ String myID="2001729844";// Its OK for usbbot
+ String myName="USBBOT";//uname^lz42usbbot     name^ usbbot
+ String myToken="2001729844:AAFoG9z31xVPWWGSdLbsUELpPcxO8c_AxIQ";//ok usbbot
  //#define pinbeep D2
  #ifdef work
   IPAddress ip(192,168,1,233); 
