@@ -26,7 +26,7 @@
 
 
  //IPAddress ip(192,168,0,196);
- IPAddress gateway(192,168,0,1);
+ IPAddress gateway(192,168,1,1);
  IPAddress subnet(255,255,255,0);
  IPAddress dns1(194,158,196,137);
  IPAddress dns2(194,158,196,141);

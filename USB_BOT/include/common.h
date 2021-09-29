@@ -142,7 +142,7 @@ void mLog(String s){
 
 void initCommon(void){
    #ifdef Serialmy
-    Serial.begin(115200); 
+    Serial.begin(9600); 
    #endif
   EEPROM.begin(512);
   #ifdef pinbeep
