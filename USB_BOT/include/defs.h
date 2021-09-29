@@ -2,7 +2,9 @@
 #define defs
 #include "place.h"
 #include <ESP8266WiFi.h>
+#ifndef token
 #include "token.h"
+#endif
 #define myTele "357390016"
 #define LzName "Lz42Stas"
 #define S868 "519049530"
