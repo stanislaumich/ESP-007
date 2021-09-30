@@ -1,5 +1,5 @@
 #ifndef myComDisplay
-#define myComDisplay
+ #define myComDisplay
 #include "place.h"
 #include "common.h"
 #include "defs.h"
@@ -9,5 +9,5 @@ void initmyDisplayT(void){
 }
 void screenonT(void){ Serial.println("ON");}
 void screenoffT(void){ Serial.println("OFF");}
-void showtimeT(void){ Serial.println("ShowTime");}
+void showtimeT(void){ /*Serial.println("ShowTime");*/}
 #endif //myComDisplay

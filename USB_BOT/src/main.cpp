@@ -47,7 +47,7 @@ void setup() {
   initWeb();
   MyTeleBotInit();
   bot.sendMessage(myTele, "Бот запущен: "+IP_to_String(WiFi.localIP()), "");
-  //bot.sendMessage(myTele, "Проверка", "");
+  bot.sendMessage(myTele, "/d1 to ON debugging", "");
   dshortbeep();
 
 }

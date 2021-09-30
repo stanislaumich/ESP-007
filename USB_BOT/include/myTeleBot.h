@@ -34,9 +34,8 @@ String sendtobot(String ch_id, String mess){
 
 String millis2time();
 
-void answerbot(String chat_id, String text){ 
-  
-  String mess="-? > "+text;
+void answerbot(String chat_id, String text){   
+  //String mess="-? > "+text;
   if(text.indexOf("=")==0){
     text.remove(0,1);
     int p = text.indexOf('=');
@@ -47,13 +46,9 @@ void answerbot(String chat_id, String text){
     text.remove(0,p+1);
     text.trim();
     sendtobot(name, execCommand(chat_id,text));
-    //bot.sendMessage(myTele, "Проверка33", ""); 
-   // mLog("name Send!!!");
    }
    else{
     bot.sendMessage(chat_id,execCommand(chat_id,text));
-    //bot.sendMessage(myTele, "Проверка22", ""); 
-     //mLog("chid Send!!!");
    }  
  }
  
@@ -74,15 +69,11 @@ String getValue(String data, char separator, int index){
 
 String execCommand(String chat_id, String text){
    String answ="? - > "+text;
-   if (text == "1") {
-       Button(0);
-      answ="+Ok 1";
-    }
-   if (text == "d0") {
+   if (text == "/d0") {
        debug=0;
       answ="+debug set OFF";
     } 
-    if (text == "d1") {
+    if (text == "/d1") {
        debug=1;
       answ="+debug set ON";
     } 
@@ -97,7 +88,7 @@ void handleNewMessages(int numNewMessages) {
     from_name = bot.messages[i].from_name;
     if (from_name == "") from_name = "UNKNOWN";
     if (debug){
-      bot.sendMessage(myTele, "Debug==1! :>"+text, "");      
+      bot.sendMessage(myTele, "Debug==1(/d0 to OFF)! :> "+text, "");      
     }
     answerbot(chat_id,text);
    }
