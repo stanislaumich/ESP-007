@@ -49,7 +49,6 @@ void setup() {
   bot.sendMessage(myTele, "Бот запущен: "+IP_to_String(WiFi.localIP()), "");
   bot.sendMessage(myTele, "/d1 to ON debugging", "");
   dshortbeep();
-
 }
 
 void loop() {
@@ -58,5 +57,4 @@ void loop() {
  //if (Treboot.isReady()) reboot();
  goBot();
  httpServer.handleClient();
-
 }

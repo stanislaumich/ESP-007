@@ -53,7 +53,6 @@ void answerbot(String chat_id, String text){
  }
  
 String getValue(String data, char separator, int index){
-  // String part01 = getValue(application_command,';',0); 
   int found = 0;
   int strIndex[] = {0, -1};
   int maxIndex = data.length()-1;
