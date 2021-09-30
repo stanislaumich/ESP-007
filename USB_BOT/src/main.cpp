@@ -10,6 +10,8 @@
  #include "myWebServer.h"
  #endif
 
+
+
 bool pingMe(void);
 void showtime(void);
 unsigned long prev=0;
@@ -45,6 +47,7 @@ void setup() {
   initWeb();
   MyTeleBotInit();
   bot.sendMessage(myTele, "Бот запущен: "+IP_to_String(WiFi.localIP()), "");
+  //bot.sendMessage(myTele, "Проверка", "");
   dshortbeep();
 
 }
